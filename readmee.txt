@@ -96,3 +96,21 @@ How Selenium and Java work together?
 3. Set Environment Variables: JAVA_HOME and Path
 4. Install IDE(IntelliJ) and create test cases(Java Project & Class files)
 5. Install Selenium(.jar files)
+
+
+
+PROJECT SETUP
+1. Create a Maven project in intelliJ
+2. Search for Maven Selenium dependency and get the maven dependency code and paste it on pom.xml after properties
+<dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.7.2</version>
+        </dependency>
+
+    </dependencies>
+3. Add the chrome driver on the project specific for the version of your chrome
+4. in the main set System.setProperty to define the webdriver
+5.and the we create the web driver object
